@@ -1,0 +1,15 @@
+{
+  "Version": "2012-10-17",
+  "Id": "Policy1633425529499",
+  "Statement": [
+    {
+      "Sid": "Stmt1633425526546",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::[userid]:user/[username]"
+      },
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::[bucket]/*"
+    }
+  ]
+}
